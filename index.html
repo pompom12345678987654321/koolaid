@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kool-Aid</title>
+    <link rel="stylesheet" href="./style.css">
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+        body {
+            font-family: 'Permanent Marker', cursive;
+            background-color: #000000;
+            color: white;
+        }
+
+        .header {
+            height: 300px;
+        }
+
+
+        .links {
+            color: black;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        
+
+        .arrow {
+            width: 50px;
+            margin: 0 auto;
+
+        }
+        .my-svg { 
+            display: block; 
+            margin: 0;  
+            padding: 0; 
+        }
+    </style>
+    
+    <link rel="stylesheet" href="animation.css">
+    
+    
+</head>
+<body>
+<nav class="links">
+    <a href="index.html">Home</a>
+    <a href="flavours.html">Flavours</a>
+    <a href="about.html">About</a>
+    <a href="wheretobuy.html">Buy</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<!--navigation bar-->
+<section class="section-one">
+    <div class="boxy">
+        <div class="headh2 fadeup">
+            <h2>Nebraskas famous drink</h2>
+        </div>
+        <!--title of page-->
+        <div class="kol fadeup delay1">
+            <marquee behavior="scroll" direction="right">Kool-Aid  Kool-Aid  Kool-Aid Kool-Aid Kool-Aid Kool-Aid Kool-Aid Kool-Aid Kool-Aid Kool-Aid Kool-Aid Kool-Aid</marquee>
+        </div>
+        <!--marquee to have cool scrolling text-->
+        <div class="textund fadeup delay2">
+            <h3>this website is all about kool-aid from different flavours to where to buy kool-aid. Welcome to my website all about kool-aid!</h3>
+        </div>
+        <!--description of what page is-->
+    </div>
+    
+    <div class="lamin fadeup delay4">
+        <img width="800" src="Untitled design (11).svg" alt="" >
+    </div>
+    <!--picture of kool-aid-->
+    <br>
+    <div class="bouncing-arrow"></div>
+</section>
+<!--home page-->
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" ><path fill="#8d39fa" fill-opacity="0.5" d="M0,256L17.1,250.7C34.3,245,69,235,103,192C137.1,149,171,75,206,53.3C240,32,274,64,309,69.3C342.9,75,377,53,411,58.7C445.7,64,480,96,514,96C548.6,96,583,64,617,74.7C651.4,85,686,139,720,181.3C754.3,224,789,256,823,234.7C857.1,213,891,139,926,117.3C960,96,994,128,1029,160C1062.9,192,1097,224,1131,218.7C1165.7,213,1200,171,1234,154.7C1268.6,139,1303,149,1337,149.3C1371.4,149,1406,139,1423,133.3L1440,128L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
+<section class="section-two"> 
+    <div class="scroll homerd">
+        <h1>OH YEAH!</h1>
+        <p>the kool-aid slogan</p>
+    </div>
+    <div class="ybox">
+        <div class="yom"><img src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/5193.png" alt=""></div>
+        <div class="scroll homert"><img src="Untitled design (6).svg" alt=""></div>
+    </div>
+</section>
+<script>
+    const fadeobserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            
+            if (entry.isIntersecting) {
+                console.log('work')
+                entry.target.classList.add('homer')
+            }
+        })
+    },
+    {threshold: 0.5 })
+    const fadeElements = document.querySelectorAll(".scroll")
+    fadeElements.forEach((el) => fadeobserver.observe(el)); 
+    
+</script>
+<!--kool-aid man coming in when you scroll to this page-->
+<script src="animation.js"></script>
+</body>
+</html>

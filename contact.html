@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+        body {
+            font-family: 'Permanent Marker', cursive;
+            background-color: black;
+            color: white;
+        }
+
+
+        .links {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: larger;
+            display: flex;
+            margin-top: -120px ;
+        }
+    </style>
+</head>
+<body>
+    <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="flavours.html">Flavours</a>
+        <a href="about.html">About</a>
+        <a href="wheretobuy.html">Buy</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="forms">
+            <h2 style="margin-bottom: 5%;">send us a message</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="name" required><br>
+                <input type="email" id="email" name="email" placeholder="email" required><br>
+                <input type="text" id="subject" placeholder="subject" name="subject" required><br>
+                <textarea name="message" id="message" placeholder="write something..." style="height: 200px;" required></textarea>
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

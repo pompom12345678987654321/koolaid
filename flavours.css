@@ -1,0 +1,231 @@
+
+
+
+.pom-box {
+    position: absolute;
+    top: 870px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 940px;
+    padding: 20px;
+    z-index: 1;
+    font-size: 15px;
+
+}
+
+.pp:nth-child(even) {
+    text-align: right;
+}
+
+.tropic{
+    text-shadow: 3px 3px 12px blue;
+    font-size: 20px;
+    color: lightblue;
+}
+
+.cherry{
+    text-shadow: 3px 3px 12px red;
+    font-size: 20px;
+    color: lightcoral;
+}
+.grape{
+    text-shadow: 3px 3px 12px purple;
+    font-size: 20px;
+    color: rgb(222, 172, 255);
+}
+.blueras{
+    text-shadow: 3px 3px 12px yellow;
+    color: blue;
+    font-size: 20px;
+}
+.orange{
+    text-shadow: 3px 3px 12px rgba(255, 166, 0, 0.6);
+    font-size: 20px;
+    color: lightsalmon;
+}
+.strawkiwi{
+    text-shadow: 3px 3px 12px red;
+    font-size: 20px;
+    color: lightgreen;
+}
+
+.classic{
+    text-align: center;
+}
+.sec4{
+    background-color: #7F00FF;
+    z-index: 3000;
+    transform: translateY(-57px);
+    padding: 400px;
+}
+.wavestt{
+
+    background-color: rgb(138,43,226);
+    transform: translateY(-30px);
+}
+.tkom{
+    font-size: 50px;
+    color: rgb(255, 251, 251);
+    text-shadow: rgb(136, 90, 179) 3px 3px 6px;
+    top: 130px;
+    left: 40%;
+    position: absolute;
+}
+.sec3{
+    padding: 300px;
+}
+.sec3 h1{
+    position: absolute;
+    top: 10%;
+    right: 37%;
+    font-size: 40px;
+}
+.sec3 table{
+
+    position: relative;
+    right: -2%;
+}
+.sec3 table tr{
+    border: 2px solid black;
+}
+.sec3 table tr td{
+    border: 3px solid black;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: black 6px 6px 12px;
+    transition: scale 0.1s linear;
+}
+
+.sec3 table tr td h2 {
+    padding-left: 10px;
+}
+.sec3 table tr td img{
+    max-height: 300px;
+    max-width: 300px;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+.sec3 table tr td:hover{
+    scale: 105%;
+
+}
+.kool{
+    font-size: 30px;
+    width: 540px;
+    position: absolute;
+    top: 33%;
+    left: 5%;
+}
+.secto4{
+    margin: 0;
+    padding: 400px;
+    box-sizing: border-box;
+    background-color: 	#6F2DA8;
+    transform: translateY(-20px);
+}
+.secto4 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: #6F2DA8;
+}
+.limited{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.limited span{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 45deg)) translateZ(300px);
+    -webkit-box-reflect: below 100px linear-gradient(transparent, transparent, transparent, #6F2DA8)
+}
+
+.limited span img{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    border-radius: 18px;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.waveflave{
+    background-color:#8a2be2;
+    transform: translateY(-13px);
+   
+}
+.secto4 h1{
+    font-size: 50px;
+    position: flex;
+    margin-top: -150px ;
+   margin-bottom: 180px;
+}
+.secto4 p{
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    right: 150px;
+}
+.lomkkol{
+    width: 900px;
+    padding-bottom: 50px;
+}
+.secto6{
+    padding: 300px;
+    background-color: #7415cd;
+    transform: translateY(-26px);
+}
+.margarine{
+    transform: translateY(-20px);
+    background-color: #6F2DA8;
+}
+.marq img{
+    width: 200px;
+    height: 300px;
+    animation: pom 16s linear infinite;
+    transform-style: preserve-3d;
+    
+}
+.secto6 h1{
+    font-size: 50px;
+    display: flex;
+    padding-bottom: 200px;
+    margin-left: 230px;
+    margin-top: -100px;
+}
+.secto6 p{
+    display: flex;
+    width: 850px;
+    font-size: 20px;
+    margin-top: -160px;
+    margin-left: 100px;
+    padding-bottom: 100px;
+}
+@keyframes pom {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
