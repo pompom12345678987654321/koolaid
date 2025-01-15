@@ -1,0 +1,81 @@
+
+
+.sect h1{
+    font-size:45px;
+    text-shadow: 3px 3px 6px rgb(107, 0, 128);
+    position: absolute;
+    top:160px;
+    left: 100px;
+}
+/* positioning the h1 */
+.ploq{
+    font-size: 26px;
+    position: absolute;
+    top: 260px;
+    width: 550px;
+    left: 100px;
+}
+.sect h2{
+    font-size: 18px;
+    position: absolute;
+    top: 300px;
+    width: 550px;
+    left: 100px;
+}
+.sect img{
+    position: absolute;
+    width: 800px;
+    top: -190px;
+    right: 30px;
+}
+.larrow{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent; 
+    border-top: 40px solid #5D3FD3; 
+    margin: 50px auto; 
+    animation: bounce 1s infinite; 
+    position: absolute;
+    left: 50%;
+    top: 550px;
+}
+/* arrow that bounces up and down to tell you to scroll */
+.sect{
+    padding: 250px;
+}
+.sectatwo{
+    background-color: #5D3FD3;
+    padding: 400px;
+    transform: translateY(-8.6px);
+}
+.sectatwo td{
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    border: 4px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 6px black;
+}
+.sectatwo tr td h1{
+    font-size: 16px;
+    width: 180px;
+    padding-left: 10px;
+}
+.sectatwo tr td img{
+    width: 120px;
+    margin-left: 200px;
+    margin-top: -450px;
+}
+.sectatwo h2{
+    position: absolute;
+    font-size: 40px;
+    left: 470px;
+    top: 200px;
+}
+.sectatwo tr td:hover{
+    scale: 105%;
+}
+/* make the square bigger when i hover over it */
+.sectatwo tr td{
+    transition: scale 0.1s linear;
+}
